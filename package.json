@@ -16,8 +16,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://github.com/clarkcj15/Dina_Providers_App#readme",
-  "name": "Dina_App",
+  "homepage": "https://github.com/clarkcj15/Dina_Providers_App",
+  "name": "Dina_Providers_App",
   "version": "1.0.0",
   "main": "server.js",
   "repository": {

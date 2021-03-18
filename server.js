@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 })
 
 //Index
-app.get('/providers', (req, res) => {
+app.get('/clarkcj15/Dina_Providers_App/providers', (req, res) => {
     Provider.find({}, (err, allProviders) => {
         if(!err) {
             res.render('Index', {
@@ -46,7 +46,7 @@ app.get('/providers', (req, res) => {
 })
 
 //Create
-app.post('/providers', (req, res) => {
+app.post('/clarkcj15/Dina_Providers_App/providers', (req, res) => {
     Provider.create(req.body, (err, createdProvider) => {
         if(!err) {
             res.redirect('/providers')
@@ -57,7 +57,7 @@ app.post('/providers', (req, res) => {
 })
 
 //Show
-app.get('/providers/:id', async (req, res) => {
+app.get('/clarkcj15/Dina_Providers_App/providers/:id', async (req, res) => {
     Provider.findById(req.params.id, (err, foundProvider) => {
         if(!err) {
             res.render('Show', {
