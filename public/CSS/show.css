@@ -1,0 +1,15 @@
+ul.bar {
+    display: flex;
+    background-color: #48BD9D;
+    justify-content: space-around;
+    width: 100vw;
+    height: 8vh;
+}
+
+html {
+    background-color: #253B5F;
+}
+
+a, p, h1 ,h5 {
+    color: whitesmoke;
+}

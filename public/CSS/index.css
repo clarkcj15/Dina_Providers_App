@@ -1,0 +1,19 @@
+ul.bar {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    background-color: #48BD9D;
+    width: 100vw;
+    height: 8vh;
+}
+input.mr-sm-2.form-control {
+    display: flex;
+}
+
+html {
+    background-color: #253B5F;
+}
+
+a, h1, h5 {
+    color: whitesmoke;
+}
