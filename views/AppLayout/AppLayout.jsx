@@ -10,7 +10,7 @@ class AppLayout extends React.Component {
                 </head>
                 <body>
                     <nav>
-                        <ul>
+                        <ul style={{listStyle: "none"}}>
                             <li>
                                 <a href="/providers">Home</a>
                             </li>
