@@ -28,9 +28,6 @@ mongoose.connection.on('dissconnected', () => {
 mongoose.connection.once('open', () => {
     console.log('connected to mongo');
 })
-app.get('/', (req, res) => {
-    res.send('Hello World');
-})
 
 //Index
 app.get('/Dina_Providers_App/providers', (req, res) => {
