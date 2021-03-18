@@ -15,7 +15,7 @@ class Index extends React.Component{
                         return(
                             <li className="prov-list" style={{listStyle: "none"}}>
                                 <ul>
-                                <a href={`clarkcj15/Dina_Providers_App/providers/${provider.id}`}>{provider.name}</a>
+                                <a href={`/Dina_Providers_App/providers/${provider.id}`}>{provider.name}</a>
                                 </ul>
                             </li>
                         )
