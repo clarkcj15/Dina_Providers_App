@@ -33,7 +33,41 @@ app.get('/', (req, res) => {
 })
 
 //Index
+app.get('/providers', (req, res) => {
+    Provider.find({}, (err, allProviders) => {
+        if(!err) {
+            res.render('Index', {
+                provider: allProviders
+            })
+        } else {
+            res.send(err)
+        }
+    })
+})
 
+//Create
+app.post('/providers', (req, res) => {
+    Provider.create(req.body, (err, createdProvider) => {
+        if(!err) {
+            res.redirect('/providers')
+        } else {
+            res.send(err);
+        }
+    })
+})
+
+//Show
+app.get('/providers/:id', async (req, res) => {
+    Provider.findById(req.params.id, (err, foundProvider) => {
+        if(!err) {
+            res.render('Show', {
+                provider: foundProvider
+            })
+        } else {
+            res.send(err);
+        }
+    })
+})
 
 app.listen(PORT, () => {
     console.log(`currently on port ${PORT}`);
