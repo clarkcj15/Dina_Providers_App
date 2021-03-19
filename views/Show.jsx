@@ -5,7 +5,7 @@ class Show extends React.Component{
         return(
             <AppLayout
             title={`${this.props.children}`}
-            stylesheet ="/css/show.css"
+            stylesheet ="/CSS/show.css"
             >
                 <p><h1>{this.props.provider.name}</h1></p>
                 <p> Gender: {this.props.provider.gender}</p>

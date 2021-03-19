@@ -6,7 +6,7 @@ class Index extends React.Component{
         return(
             <AppLayout
             title="Provider Index Page"
-            stylesheet ="/css/index.css"
+            stylesheet ="/CSS/index.css"
             >
             <div> 
             <ul className="index-page">
