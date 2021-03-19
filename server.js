@@ -20,9 +20,9 @@ mongoose.connect(MONGO_STRING, {
     useFindAndModify: true
 })
 mongoose.connection.on('error', (err) => {
-    console.logt(err.message);
+    console.log(err.message);
 })
-mongoose.connection.on('dissconnected', () => {
+mongoose.connection.on('disconnected', () => {
     console.log('MonNO');
 })
 mongoose.connection.once('open', () => {
