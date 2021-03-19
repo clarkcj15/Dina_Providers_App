@@ -32,7 +32,7 @@ mongoose.connection.once('open', () => {
 app.get('/', (req, res) => {
 	Provider.find({}, (err, allProviders) => {
 		if (!err) {
-			res.render('Home', {
+			res.render('Index', {
 				provider: allProviders,
 			});
 		} else {
